@@ -50,7 +50,7 @@ module.exports = {
         }),
 
         new webpack.DefinePlugin({
-            //NODE_ENV flag for reactjs
+            //NODE_ENV flag for reactjs Section 8 , 45
             'process.env.NODE_ENV':JSON.stringify(process.env.NODE_ENV)
         })
     ]
