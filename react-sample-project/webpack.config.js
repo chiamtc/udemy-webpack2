@@ -17,8 +17,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "dist"),
         //[name] variable= the name from entrry{} so it will be bundle.js and vendor.js
-        //[chunkhash] for cache busting
-        filename: "[name].[chunkhash].js"
+        filename: "[name].js"
     },
     module: {
         rules:[
@@ -40,8 +39,7 @@ module.exports = {
         // , pull them out and put in vendor.js only so no more duplicated dependencies codes in bundle.js
         // need configuration ** name
         new webpack.optimize.CommonsChunkPlugin({
-            //with chunkhash , manifest is necessary to allow webpack differentiates which files to download if bundle.js changes
-            names:['vendor', 'manifest']
+            name:'vendor'
         }),
         //htmlwebpackplugin is to automically include script tag from dist so in index.html, we dont have to manually include them on <head>
         // need configuration **template
