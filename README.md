@@ -1,3 +1,3 @@
 # udemy-webpack2
 
-[Simple deployment with webpack link](https://chiamtc.github.io/udemy-webpack2/#/)
+[End result of the course](https://chiamtc.github.io/udemy-webpack2/#/)
