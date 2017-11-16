@@ -6,3 +6,4 @@
 [Via github page- gh-pages branch](https://chiamtc.github.io/udemy-webpack2/#/)
 
 [Via Surge.sh](http://tired-picture.surge.sh/#/)
+- surge -p dist 
